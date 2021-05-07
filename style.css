@@ -61,7 +61,7 @@ html {
     align-items: center;
 }
 
-.drum-pad:active {
+.active {
     background-color: var(--outline-color);
 }
 

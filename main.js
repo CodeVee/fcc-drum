@@ -6,7 +6,6 @@ const keyClick = (e) => {
     const id = 'Key-' + key;
 
     const target = document.getElementById(id);
-
     if (target) {
         handlePlay(target);
     }
@@ -20,12 +19,16 @@ const padClick = (e) => {
 }
 
 const handlePlay = (element) => {
-
+    element.classList.toggle('active');
     const audio = element.firstElementChild;
     audio.play();
 
     const text = element.id;
     document.getElementById('display').innerText = text;
+
+    setTimeout(() => {
+        element.classList.toggle('active');
+    }, 100); 
 }
 
 Array.from(pad).forEach(key => {
