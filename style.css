@@ -28,7 +28,37 @@ html {
 
 #drum-machine {
     width: 66rem;
-    min-height: 30rem;
+    min-height: 33rem;
     background-color: var(--bgDrum-color);
     outline: .5rem solid var(--outline-color);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+}
+
+.keys {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.others {
+    background-color: brown;
+}
+
+.drum-pad {
+    border-radius: 1rem;
+    background-color: var(--bgKey-color);
+    cursor: pointer;
+    box-shadow: black 3px 3px 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drum-pad:active {
+    background-color: var(--outline-color);
 }
