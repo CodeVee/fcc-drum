@@ -17,3 +17,18 @@ html {
   font-size: 10px;
   line-height: 1.5;
 }
+
+.wrapper {
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drum-machine {
+    width: 66rem;
+    min-height: 30rem;
+    background-color: var(--bgDrum-color);
+    outline: .5rem solid var(--outline-color);
+}
