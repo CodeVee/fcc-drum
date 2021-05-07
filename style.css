@@ -44,7 +44,9 @@ html {
 }
 
 .others {
-    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .drum-pad {
@@ -61,4 +63,13 @@ html {
 
 .drum-pad:active {
     background-color: var(--outline-color);
+}
+
+#display {
+    padding: 1.5rem;
+    width: 20rem;
+    background-color: var(--bgKey-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
 }
