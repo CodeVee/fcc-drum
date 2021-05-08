@@ -3,7 +3,7 @@
     --bgKey-color: grey;
     --bgDrum-color: #b3b3b3;
     --outline-color: orange;
-  }
+}
 
 * {
     margin: 0;
@@ -75,5 +75,10 @@ html {
 }
 
 @media  screen and (max-width: 500px) {
-    
+    #drum-machine {
+        width: 80%;
+        min-height: 33rem;
+        padding: 2rem;
+        grid-template-columns: 1fr;
+    }
 }
