@@ -10,9 +10,7 @@ const keyClick = (e) => {
     const id = 'Key-' + key;
 
     const target = document.getElementById(id);
-    if (target) {
-        handlePlay(target);
-    }
+    if (target) handlePlay(target); 
 }
 
 machine.addEventListener(keyup, keyClick)
